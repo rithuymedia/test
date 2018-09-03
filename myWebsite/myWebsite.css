@@ -1,0 +1,116 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+*{
+	box-sizing: border-box;
+}
+header{
+	background-color: #f45f0e;
+	height: 15vh;
+	width: 100vw;
+	color:white;
+	line-height: 15vh;
+	
+}
+h1{
+	margin:0px;
+	float:left;
+	margin-left: 20px;
+}
+#imgandtext>ul{
+	margin:0px;
+	margin-left: 20vw;		/*change here*/
+	list-style-type:none;
+	float: left;
+}
+#imgandtext>ul>li{
+	display:inline-block;
+	font-size: 25px;
+	margin-left: 10vw;
+}
+#imgandtext>ul>li>a{
+	text-decoration: none;
+	color: white;
+}
+#imgandtext>ul>li:hover{
+	cursor: pointer;
+}
+#main_image{
+	width: 100vw;
+	height: 83vh;
+	background: white url("main_image.png") no-repeat center;
+	background-size: 100% 100%;
+}
+#html5{
+	width: 100vw;
+	height: 100vh;
+	
+}
+#css3{
+	width: 100vw;
+	height: 100vh;
+	
+}
+#javascript{
+	width: 100vw;
+	height: 100vh;
+	
+}
+#uparrow{
+	position: fixed;
+	display: none;
+	top: 80vh;
+	left: 85vw;
+	width: 5vw;
+	height: 5vw;
+	background: transparent url("uparrow.png") no-repeat center;
+	background-size: 100% 100%;
+}
+#uparrow:hover{
+	cursor:pointer;
+}
+.col-2{
+	float: left;
+	width: 50%;
+	height: 100vh;
+}
+#html5>div:first-child{
+	background: transparent url("HTML_Logo.png") no-repeat center;
+	background-size: 100% 100%;
+}
+
+#css3>div:first-child{
+	background: transparent url("CSS_Logo.png") no-repeat center;
+	background-size: 100% 100%;
+}
+#javascript>div:first-child{
+	background: transparent url("JS_Logo.png") no-repeat center;
+	background-size: 100% 100%;
+}
+#html5>div:nth-child(2)>h2, #css3>div:nth-child(2)>h2, #javascript>div:nth-child(2)>h2{
+	text-align: center;
+	font-family: comic sans ms;
+	font-size: 25px;
+	padding: 10px;
+	padding-top: 30px
+}
+
+#html5>div:nth-child(2)>#content, #css3>div:nth-child(2)>#content, #javascript>div:nth-child(2)>#content{
+	padding: 10px;
+	font-size: 20px;
+}
+#html5>div>button, #css3>div>button, #javascript>div>button{
+	font-size: 30px;
+	display: block;
+	margin: 0px auto;
+	margin-top: 30px;
+	background-color: red;
+	color: white;
+	box-shadow:0 0 5px blue;
+	border-radius: 5px;
+
+}
+#html5>div>button:hover, #css3>div>button:hover, #javascript>div>button:hover{
+	cursor: pointer;
+}
