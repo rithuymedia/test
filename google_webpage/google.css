@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+#main>header>div>ul{
+    list-style-type: none;
+}
+#main>header>div>ul>li{
+    display: inline-block;
+}
