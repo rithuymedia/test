@@ -39,11 +39,12 @@
       temperature.innerHTML = "Temperature : " + parseFloat(jsonObject.main.temp) + "K";
       latitude.innerHTML = "Latitude: " + parseFloat(jsonObject.coord.lat);
       longitude.innerHTML = "Latitude: " + parseFloat(jsonObject.coord.lon);
-      main.style.height = "55vh";
+      main.style.height = "510px";
       img.style.display = "block";
-      var source = "transparent url(" +"https://openweathermap.org/img/w/"+ jsonObject.weather[0].icon  + ".png"+ ") no-repeat center";
+      var source = "ghostwhite url(" +"https://openweathermap.org/img/w/"+ jsonObject.weather[0].icon  + ".png"+ ") no-repeat center";
       img.style.background = source;
-
+      img.style.borderRadius = "50%";
+      
     }
     function httpRequestFunc(url, callback)
     {
