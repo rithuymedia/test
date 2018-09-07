@@ -1,0 +1,123 @@
+body{
+    background-color: #09e293;
+}
+#main{
+    border:2px solid black;
+    width:max-content;
+    margin:20vh auto;
+    border-radius: 10px;
+    overflow:auto;
+    background-color: #302e2e;
+    box-shadow: 0px 0px 10px #302e2e;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+input, button{
+    display:block;
+    margin:20px;
+    font-size: 15px;
+    padding:10px;
+    border-radius: 10px;
+}
+input{
+    background-color: #706d6d;
+    color: white;
+    border-style:none;
+}
+input::-webkit-input-placeholder{
+    color:white;
+}
+button{
+    background-color:#09e293;
+    color:white;
+    cursor:pointer;
+    border:none;
+}
+p{
+    display:inline;
+    margin-left:20px;
+    color:white;
+}
+button{
+    float:right;
+}
+body{
+    position: relative;
+}
+#myModal{
+    display: none;
+    position: fixed;
+    top:15vh;
+    bottom:20vh;
+    left: 20vw;
+    right: 20vw;
+    width: 40vw;
+    height: 40vh;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0, 0.9);
+    animation-name: animate;
+    animation-duration: 1s;
+    
+}
+
+@keyframes animate{
+    /* 0% {transform: scale(0);}
+    100% {transform: scale(1);} */
+
+    0% {left:20vw;width:0vw;}
+    100%{width:40vw;}
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+#in_content>li{
+    list-style-type: none;
+    color: white;
+    margin: 5px;
+}
+#in_content>h2{
+    color: white;
+}
+#in_content{
+    padding: 20px;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+    margin:10vh auto;
+    animation-name: heading;
+    animation-duration: 2s;
+}
+@keyframes heading{
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+@media (max-width: 700px){
+    #myModal{
+        
+        width: 60vw;
+        
+    }
+
+}
+@media (max-width:450px){
+    #myModal{
+        overflow:hidden;
+        width: 270px;
+    }
+}
