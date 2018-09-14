@@ -1,0 +1,62 @@
+#main{
+    border: 1px solid black;
+    width: 384px;
+    height: 250px;
+    position: relative;
+    /* top: 15vh;
+    left: 40vw; */
+    top:15vh;
+    bottom:15vh;
+    margin:0px auto;
+    border-radius: 10px;
+    background-color: 	#F5F5F5;
+    box-shadow: 0px 0px 5px black;
+    background : #F5F5F5 url("beach1.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+#main:hover{
+    box-shadow: 0px 0px 10px black;
+}
+input, button, #city-name, #temp, #latitude, #longitude, #img{
+    display:block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#city-name, #temp, #longitude, #latitude{
+    text-align: center;
+}
+input{
+    margin-top: 20px;
+}
+input{
+    width: 250px;
+}
+button{
+    width: 270px;
+    margin-top:15px;
+    background-color:white;
+    color: navy;
+    font-weight: bold;
+    cursor : pointer;
+
+}
+span{
+    display:block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin:20px auto;
+    color: black;
+    font-size: 40px;
+}
+#img{
+    display: none;
+    width: 50px;
+    height: 50px;
+    
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 10px gray;
+}
